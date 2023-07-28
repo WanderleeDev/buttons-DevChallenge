@@ -1,0 +1,168 @@
+<main class="gallery" >
+  <h2>Buttons</h2>
+  <div class="gallery-btns">
+    <div class="btns-container">
+      <app-button *ngFor="let clr of [ '#E0E0E0' ,'#AEAEAE']" [btnStyle]="{
+        width: '5.0625rem',
+        height: '2.25rem',
+        background: clr,
+        boxShadow: '0px 2px 3px 0px rgba(51, 51, 51, 0.20)',
+        colo: '#3F3F3F'
+      }"/>
+    </div>
+
+    <div class="btns-container">
+      <app-button *ngFor="let clr of [ 'transparent' ,'rgba(41, 98, 255, 0.10)']" [btnStyle]="{
+        width: '5.5rem',
+        height: '2.25rem',
+        border: '1px solid #3D5AFE',
+        background: clr,
+        color: '#3D5AFE'
+      }"/>
+    </div>
+
+    <div class="btns-container">
+      <app-button *ngFor="let clr of ['transparent', 'rgba(41, 98, 255, 0.10)']" [btnStyle]="{
+        width: '5.5rem',
+        height: '2.25rem',
+        background: clr,
+        color: '#3D5AFE'
+      }"/>
+    </div>
+
+    <div class="btns-container">
+      <app-button [btnStyle]="{
+        width: '5.0625rem',
+        height: '2.25rem',
+        background: '#3D5AFE',
+        color: '#fff'
+      }"/>
+    </div>
+
+    <div class="btns-container">
+      <app-button [hasBtnDisabled]="true" *ngFor="let btn of ['#E0E0E0','transparent']" [btnStyle]="{
+        width: '5.5rem',
+        height: '2.25rem',
+        background: btn,
+        color: '#9E9E9E'
+      }"/>
+    </div>
+
+    <div class="btns-container">
+      <app-button *ngFor="let btn of ['reverse','no-reverse']" [btnStyle]="{
+        width: '6.5625rem',
+        height: '2.25rem',
+        background: '#2962FF',
+        color: '#fff',
+        boxShadow: '0px 2px 3px 0px rgba(0, 49, 202, 0.20)',
+      }"/>
+    </div>
+
+    <div class="btns-container">
+      <app-button 
+      *ngFor="let btn of [
+      {
+        width: '4.5625rem',
+        height: '2rem',
+        boxShadow: '0px 2px 3px 0px rgba(0, 49, 202, 0.20)'
+      },
+      {
+        width: '5.0625rem',
+        height: '2.25rem',
+        boxShadow: '0px 2px 3px 0px rgba(0, 0, 0, 0.20)'
+      },
+      {
+        width: '5.8125rem',
+        height: '2.625rem',
+        boxShadow: '0px 2px 3px 0px rgba(0, 49, 202, 0.20)'
+      }]" 
+      [btnStyle]="{
+        width: btn.width,
+        height: btn.height,
+        background: '#2962FF',
+        color: '#fff',
+        boxShadow: btn.boxShadow
+      }"/>
+    </div>
+
+    <div class="btns-container">
+      <app-button 
+      *ngFor="let btn of [
+      {
+        width: '5.0625rem',
+        height: '2.25rem',
+        boxShadow: '0px 2px 3px 0px rgba(51, 51, 51, 0.20)',
+        color: '#3F3F3F',
+        background: '#E0E0E0'
+      },
+      {
+        width: '5.0625rem',
+        height: '2.25rem',
+        boxShadow: '0px 2px 3px 0px rgba(41, 98, 255, 0.20)',
+        color: '#FFF',
+        background: '#2962FF'
+      },
+      {
+        width: '6.5rem',
+        height: '2.25rem',
+        boxShadow: '0px 2px 3px 0px rgba(69, 90, 100, 0.20)',
+        color: '#FFF',
+        background: '#455A64'
+      },
+      {
+        width: '5.0625rem',
+        height: '2.25rem',
+        boxShadow: '0px 2px 3px 0px rgba(211, 47, 47, 0.20)',
+        color: '#FFF',
+        background: '#D32F2F'
+      }]"
+    [btnStyle]="{
+      width: btn.width,
+      height: btn.height,
+      background: btn.background,
+      color: btn.color,
+      boxShadow: btn.boxShadow,
+    }"/>
+    </div>
+
+    <div class="btns-container">
+      <app-button  
+      *ngFor="let btn of [
+      {
+        width: '5.0625rem',
+        height: '2.25rem',
+        boxShadow: '0px 2px 3px 0px rgba(51, 51, 51, 0.20)',
+        color: '#3F3F3F',
+        background: '#AEAEAE'
+      },
+      {
+        width: '5.0625rem',
+        height: '2.25rem',
+        boxShadow: '0px 2px 3px 0px rgba(41, 98, 255, 0.20)',
+        color: '#FFF',
+        background: '#0039CB'
+      },
+      {
+        width: '6.5rem',
+        height: '2.25rem',
+        boxShadow: '0px 2px 3px 0px rgba(69, 90, 100, 0.20)',
+        color: '#FFF',
+        background: '#1C313A'
+      },
+      {
+        width: '5.0625rem',
+        height: '2.25rem',
+        boxShadow: '0px 2px 3px 0px rgba(211, 47, 47, 0.20)',
+        color: '#FFF',
+        background: '#9A0007'
+      }]"
+    [btnStyle]="{
+      width: btn.width,
+      height: btn.height,
+      background: btn.background,
+      color: btn.color,
+      boxShadow: btn.boxShadow,
+    }"/>
+    </div>
+  </div>
+</main>

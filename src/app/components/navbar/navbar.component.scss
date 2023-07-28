@@ -1,0 +1,60 @@
+:host{
+}
+
+.headerPage{
+  position: fixed;
+  width: min(100%, 14.8125rem);
+  height: 100vh;
+  padding: 2rem;
+  background-color: #f0ffff;
+  @media screen and (min-width:40rem) {
+    position: initial;
+  }
+  
+  .mainTitle{
+    font-family: Poppins;
+    font-size: var(--step-1);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  
+    &-firstChild{
+      color: var(--orange, #F7542E);
+    }
+
+    &-lastChild{
+      color: var(--blueDeep, #090F31);
+    }
+  }
+  
+  .nav{
+    display: flex;
+    flex-flow: column wrap;
+    width: 3.875rem;
+    color: var(--grayLight, #9E9E9E);
+    font-family: Noto Sans JP;
+    font-size: 0.875rem;
+    font-weight: 500;
+  
+    &-list{
+      margin-top: 7rem;
+      display: flex;
+      flex-flow: column wrap;
+      gap: 1.5rem;
+    }
+    
+    &-item{
+      text-transform: capitalize;
+      font-weight: 600;
+      cursor: pointer;
+      &:nth-child(5){
+        color: #090F31;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+.btn-wrapper {
+  margin-block: 2rem;
+}

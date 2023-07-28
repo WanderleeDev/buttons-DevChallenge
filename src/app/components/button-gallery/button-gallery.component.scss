@@ -1,0 +1,14 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.btns-container{
+  display: flex;
+}

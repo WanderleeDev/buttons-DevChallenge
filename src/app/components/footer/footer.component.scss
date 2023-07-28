@@ -1,0 +1,15 @@
+:host{
+  
+}
+
+.footerPage{
+  color: #A9A9A9;
+  &-content{
+    text-align: center;
+  }
+  
+  &-link{
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}

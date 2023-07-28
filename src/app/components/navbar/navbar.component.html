@@ -1,0 +1,22 @@
+<header class="headerPage">
+  <nav class="nav">
+    <h1 class="mainTitle">
+      <span class="mainTitle-firstChild">Dev</span>
+      <span class="mainTitle-lastChild">challenges.io</span>
+    </h1>
+    <ul class="nav-list">
+      <li *ngFor="let item of navItems" class="nav-item">
+        {{item}}
+      </li>
+    </ul>
+  </nav>
+  <div class="btn-wrapper">
+    <app-button [hasBtnDisabled]="true" [imgUrl]="logoBtn" text="Create button" [btnStyle]= "{
+      width: '9rem',
+      height: '2.25rem',
+      boxShadow: '0px 2px 3px 0px rgba(211, 47, 47, 0.20)',
+      color: '#FFF',
+      background: '#F7542E',
+    }"/>
+  </div>
+</header>
