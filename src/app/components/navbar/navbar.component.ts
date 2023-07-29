@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ImgServiceService } from 'src/app/services/ImgService/img-service.service';
 
 @Component({
   selector: 'app-navbar',
@@ -16,5 +17,9 @@ navItems:string[] = [
   'grid'
   ];
   
-  logoBtn: string = '../../../assets/svg/magicWnad.svg';
+  logoBtn: string = '';
+
+  constructor(private imgService: ImgServiceService) {
+    this.logoBtn = this.imgService.listImg.magicWand;
+  }
 }

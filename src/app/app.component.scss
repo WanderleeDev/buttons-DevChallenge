@@ -4,3 +4,7 @@
     grid-template-columns: auto 1fr;
   }
 }
+
+router-outlet{
+  display: none;
+}

@@ -1,11 +1,13 @@
 :host{
-  
+  grid-column: 2/3;
+  align-self: self-end;
 }
 
 .footerPage{
+  padding: 2rem 4rem;
   color: #A9A9A9;
   &-content{
-    text-align: center;
+    //text-align: center;
   }
   
   &-link{

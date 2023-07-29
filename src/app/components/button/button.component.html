@@ -1,14 +1,14 @@
 <div>
-  <code>
-  <\Button variant=”outline” />
+  <code class="code-text" *ngIf="dataCode">
+    {{dataCode}}
   </code>
   <button 
     [disabled]="hasBtnDisabled" 
     class="btn" 
     [style]="btnStyle"
-    [title]="hasBtnDisabled ? 'Está deshabilitado' : ''">
+    [title]="hasBtnDisabled ? 'is disabled' : ''">
     <img class="btn-img" *ngIf="imgUrl" [src]="imgUrl" alt="icon">
-    <span>
+    <span *ngIf="text">
       {{text}}
     </span>
   </button>

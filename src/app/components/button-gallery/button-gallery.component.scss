@@ -1,7 +1,24 @@
+:host {
+  grid-area:1/2/2/3 ; 
+}
+
 .gallery {
+  padding: 4rem 4rem 4rem 4rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-title {
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+  }
+
   &-btns {
     display: flex;
     flex-direction: column;
@@ -11,4 +28,10 @@
 
 .btns-container{
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  app-button{
+    min-width: 16rem; 
+  }
 }

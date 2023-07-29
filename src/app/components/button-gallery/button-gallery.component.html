@@ -1,33 +1,49 @@
 <main class="gallery" >
-  <h2>Buttons</h2>
+  <header class="gallery-header">
+    <h2 class="gallery-title">Buttons</h2>
+    <app-button
+    [btnStyle]="{
+      width: '2.5rem',
+      height: '2.5rem',
+      backgroundColor: '#F7542E',
+      boxShadow: '0px 2px 3px 0px rgba(51, 51, 51, 0.20)',
+      color: '#fff'
+    }"
+    [imgUrl]="listImg.menuIcon"
+    [text]="''"
+    [ariaLabel]="'open menu'"/>
+  </header>
   <div class="gallery-btns">
     <div class="btns-container">
-      <app-button *ngFor="let clr of [ '#E0E0E0' ,'#AEAEAE']" [btnStyle]="{
+      <app-button *ngFor="let clr of [ '#E0E0E0' ,'#AEAEAE'], index as i" [btnStyle]="{
         width: '5.0625rem',
         height: '2.25rem',
         background: clr,
         boxShadow: '0px 2px 3px 0px rgba(51, 51, 51, 0.20)',
-        colo: '#3F3F3F'
-      }"/>
+        color: '#3F3F3F'
+      }"
+      [dataCode]="dataTag[1][i]"/>
     </div>
 
     <div class="btns-container">
-      <app-button *ngFor="let clr of [ 'transparent' ,'rgba(41, 98, 255, 0.10)']" [btnStyle]="{
+      <app-button *ngFor="let clr of [ 'transparent' ,'rgba(41, 98, 255, 0.10)'], index as i" [btnStyle]="{
         width: '5.5rem',
         height: '2.25rem',
         border: '1px solid #3D5AFE',
         background: clr,
         color: '#3D5AFE'
-      }"/>
+      }"
+      [dataCode]="dataTag[1][i]"/>
     </div>
 
     <div class="btns-container">
-      <app-button *ngFor="let clr of ['transparent', 'rgba(41, 98, 255, 0.10)']" [btnStyle]="{
+      <app-button *ngFor="let clr of ['transparent', 'rgba(41, 98, 255, 0.10)'], index as i" [btnStyle]="{
         width: '5.5rem',
         height: '2.25rem',
         background: clr,
         color: '#3D5AFE'
-      }"/>
+      }"
+      [dataCode]="dataTag[2][i]"/>
     </div>
 
     <div class="btns-container">
@@ -36,26 +52,30 @@
         height: '2.25rem',
         background: '#3D5AFE',
         color: '#fff'
-      }"/>
+      }"
+      [dataCode]="dataTag[3][0]"/>
     </div>
 
     <div class="btns-container">
-      <app-button [hasBtnDisabled]="true" *ngFor="let btn of ['#E0E0E0','transparent']" [btnStyle]="{
+      <app-button [hasBtnDisabled]="true" *ngFor="let btn of ['#E0E0E0','transparent'], index as i" [btnStyle]="{
         width: '5.5rem',
         height: '2.25rem',
         background: btn,
         color: '#9E9E9E'
-      }"/>
+      }"
+      [dataCode]="dataTag[4][i]"/>
     </div>
 
     <div class="btns-container">
-      <app-button *ngFor="let btn of ['reverse','no-reverse']" [btnStyle]="{
+      <app-button [imgUrl]="listImg.shopping" *ngFor="let btn of ['row' ,'row-reverse'], index as i" [btnStyle]="{
         width: '6.5625rem',
         height: '2.25rem',
         background: '#2962FF',
         color: '#fff',
         boxShadow: '0px 2px 3px 0px rgba(0, 49, 202, 0.20)',
-      }"/>
+        flexDirection: btn
+      }"
+      [dataCode]="dataTag[5][i]"/>
     </div>
 
     <div class="btns-container">
@@ -75,14 +95,15 @@
         width: '5.8125rem',
         height: '2.625rem',
         boxShadow: '0px 2px 3px 0px rgba(0, 49, 202, 0.20)'
-      }]" 
+      }], index as i" 
       [btnStyle]="{
         width: btn.width,
         height: btn.height,
         background: '#2962FF',
         color: '#fff',
         boxShadow: btn.boxShadow
-      }"/>
+      }"
+      [dataCode]="dataTag[6][i]"/>
     </div>
 
     <div class="btns-container">
@@ -115,14 +136,15 @@
         boxShadow: '0px 2px 3px 0px rgba(211, 47, 47, 0.20)',
         color: '#FFF',
         background: '#D32F2F'
-      }]"
+      }], index as i"
     [btnStyle]="{
       width: btn.width,
       height: btn.height,
       background: btn.background,
       color: btn.color,
       boxShadow: btn.boxShadow,
-    }"/>
+    }"
+    [dataCode]="dataTag[7][i]"/>
     </div>
 
     <div class="btns-container">
@@ -155,14 +177,15 @@
         boxShadow: '0px 2px 3px 0px rgba(211, 47, 47, 0.20)',
         color: '#FFF',
         background: '#9A0007'
-      }]"
+      }], index as i"
     [btnStyle]="{
       width: btn.width,
       height: btn.height,
       background: btn.background,
       color: btn.color,
       boxShadow: btn.boxShadow,
-    }"/>
+    }"
+    [dataCode]="dataTag[8][i]"/>
     </div>
   </div>
 </main>

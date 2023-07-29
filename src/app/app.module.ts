@@ -6,6 +6,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ButtonGalleryComponent } from './components/button-gallery/button-gallery.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { GeneratorBtnComponent } from './components/generator-btn/generator-btn.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     ButtonComponent,
     ButtonGalleryComponent,
-    FooterComponent
+    FooterComponent,
+    GeneratorBtnComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

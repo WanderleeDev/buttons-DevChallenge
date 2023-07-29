@@ -2,7 +2,9 @@
 :root{
   /* Colores */
   --negro         : #393939;
-  --blanco        :#ececec;
+  --blanco        :#fff;
+  --navColor: #f0ffff;
+
 
   /* Tipografía */
   --tipo-principal   : Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -12,8 +14,9 @@
 /* (Opcional) Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: dark) {
   :root{
-      --negro         : #ececec;
+      --negro         : #fff;
       --blanco        :#393939;
+      --navColor: #92ceff; 
   }
 }
 
