@@ -8,6 +8,8 @@ import { ButtonGalleryComponent } from './components/button-gallery/button-galle
 import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { GeneratorBtnComponent } from './components/generator-btn/generator-btn.component';
+import { OutputWindowComponent } from './components/output-window/output-window.component';
+import { InputBoxComponent } from './components/input-box/input-box.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { GeneratorBtnComponent } from './components/generator-btn/generator-btn.
     ButtonComponent,
     ButtonGalleryComponent,
     FooterComponent,
-    GeneratorBtnComponent
+    GeneratorBtnComponent,
+    OutputWindowComponent,
+    InputBoxComponent
   ],
   imports: [
     BrowserModule,

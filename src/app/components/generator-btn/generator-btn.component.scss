@@ -2,3 +2,19 @@
   grid-area:1/2/2/3 ; 
   padding: 4rem 4rem 4rem 4rem;
 }
+
+.generator {
+
+  &-title {
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+  }
+  
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
