@@ -1,0 +1,52 @@
+<form class="boxShadow" autocomplete="on">
+  <label 
+  *ngFor="let input of inputShadowList.slice(0,4)" class="boxShadow-label" for="offset">
+    <p class="boxShadow-name">{{input}}</p>
+      <app-input-base 
+      typeInput="number"
+      [valueInput]="input"
+      [styleInput]="{
+        'font-size': '.8rem',
+        'width': '2.7rem',
+        'height': '1.7rem',
+        'background-color': 'var(--orange)',
+        'padding': '.5rem',
+        'border-radius': 'var(--radius)',
+        'color': '#fff',
+        'font-weight': '600'
+      }">
+      </app-input-base>   
+    <div class="boxShadow-wrapperRange">
+      <app-input-base
+      typeInput="range"
+      [valueInput]="input"
+      [maxInput]="100"
+      [minInput]="-100"
+      nameInput="'x-axis range'"
+      [styleInput]="{
+        'position': 'relative',
+        'color': 'transparent',
+        'z-index':' 2'
+      }"
+      ></app-input-base>
+    </div>
+  </label>
+  
+  <label class="boxShadow-label" for="">
+    <p class="boxShadow-name">Color of shadow</p>
+    <div class="inputColor-wrapper">
+      <app-input-base
+      typeInput="color"
+      [valueInput]="'color'"
+      nameInput="colorChange"
+      [styleInput]="{
+        'border-radius': 'var(--radius)',
+        'width': '2.7rem',
+        'height': '1.7rem',
+        'scale': '2',
+      }">
+      </app-input-base>
+    </div>
+  </label>
+</form>
+{{shadowBox |json}}

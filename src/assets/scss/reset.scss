@@ -137,3 +137,10 @@ body {
   /* (Opcional) */ -webkit-font-smoothing: antialiased;
   /* (Opcional) */ -moz-osx-font-smoothing: grayscale;
 }
+
+/*oculta los selectores input number*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  text-align: center;
+}

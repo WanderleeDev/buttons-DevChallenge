@@ -1,0 +1,32 @@
+.btnSizer {
+  --bgClr: #33333317;
+  --radius: .4rem;
+  display: grid;
+  gap: 2rem;
+  background-color:var(--bgClr) ;
+  padding: 1rem;
+  border-radius: var(--radius);
+
+  @media (prefers-color-scheme: dark) {
+  --bgClr: #ffffff33;
+  }
+
+
+  &-label {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  &-name {
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-transform: capitalize;  }
+}
+
+.input-wrapper{
+  justify-self: flex-end;
+  width: min(10rem, 100%);
+  height: 1.7rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius);
+}

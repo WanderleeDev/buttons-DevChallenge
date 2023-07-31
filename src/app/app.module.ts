@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -10,6 +12,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { GeneratorBtnComponent } from './components/generator-btn/generator-btn.component';
 import { OutputWindowComponent } from './components/output-window/output-window.component';
 import { InputBoxComponent } from './components/input-box/input-box.component';
+import { InputBaseComponent } from './components/input-base/input-base.component';
+import { ButtonSizerComponent } from './components/button-sizer/button-sizer.component';
+import { ShadowEditorComponent } from './components/shadow-editor/shadow-editor.component';
+import { ButtonVisualStylerComponent } from './components/button-visual-styler/button-visual-styler.component';
+import { BoxImgsComponent } from './components/box-imgs/box-imgs.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +27,17 @@ import { InputBoxComponent } from './components/input-box/input-box.component';
     FooterComponent,
     GeneratorBtnComponent,
     OutputWindowComponent,
-    InputBoxComponent
+    InputBoxComponent,
+    InputBaseComponent,
+    ButtonSizerComponent,
+    ShadowEditorComponent,
+    ButtonVisualStylerComponent,
+    BoxImgsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,62 @@
+.boxShadow{
+  --bgClr: #33333317;
+  --radius: .4rem;
+  display: grid;
+  gap: 2rem;
+
+  @media (prefers-color-scheme: dark) {
+  --bgClr: #ffffff33;
+  }
+
+  background-color:var(--bgClr) ;
+  padding: 1rem;
+  border-radius: var(--radius);
+  
+  &-label{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 0;
+    align-items: center;
+  }
+  
+  &-name{
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+  }
+
+  &-wrapperRange {
+    position: relative;
+    grid-column: 1/end;
+    background-color: transparent;
+    accent-color: var(--orange);
+    &::before, &::after {
+      position: absolute;
+      content: "";
+      background-color: rgba(214, 214, 214, 0.671);
+    }
+    &::before{
+      inset: 50% 0;
+      height: .2rem;
+      border-radius: .5rem;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+    &::after{
+      width: .2rem;
+      border-radius: .1rem;
+      height: 1.3rem;
+      inset: 50% 50%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+    }
+  }
+}
+
+.inputColor-wrapper{
+  width: 2.7rem;
+  height: 1.7rem;
+  justify-self: flex-end;
+  border-radius: var(--radius);
+  overflow: hidden;
+}

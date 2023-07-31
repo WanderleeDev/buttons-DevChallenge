@@ -1,0 +1,14 @@
+<form class="btnSizer">
+  <label *ngFor="let input of inputSizerList" class="btnSizer-label" for="">
+    <p class="btnSizer-name">{{input}} :</p>
+    <div class="input-wrapper">
+      <app-input-base
+      typeInput="number"
+      [nameInput]= "input"
+      [valueInput]="'input'"
+      >
+      </app-input-base>
+    </div>
+  </label>  
+</form>
+{{sizesBtn | json}}

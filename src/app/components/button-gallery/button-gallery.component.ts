@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ImageList } from 'src/app/interface/ImageService.service';
+import { ImageList } from 'src/app/interface/ImageService.interface'; 
 import { ImgServiceService } from 'src/app/services/ImgService/img-service.service';
 
 @Component({
@@ -21,9 +21,9 @@ export class ButtonGalleryComponent {
     ['&:hover, &:focus']
   ]
   
-  listImg!: ImageList;
+  shoppingImg: string = '';
 
   constructor(private imgService: ImgServiceService){
-    this.listImg = imgService.listImg
+    this.shoppingImg = imgService.getImagesValue().shopping
   }
 }

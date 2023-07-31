@@ -1,0 +1,10 @@
+<input 
+[type]="typeInput"
+[name]="nameInput"
+[attr.max]="(maxInput > 0)? maxInput : null"
+[attr.min]="(minInput < 0)? minInput : null"
+[attr.id]="(idInput.length)? idInput : null"
+[(ngModel)]="shadowBox[valueInput]"
+[ngStyle]="styleInput"
+(input)="updateValue()"
+>

@@ -1,0 +1,32 @@
+<form class="btnStyler">
+  <label *ngFor="let input of inputStylerList.slice(0,3)" class="btnStyler-label" [for]="input">
+    <p class="btnStyler-name">{{input}} :</p>
+    <div class="inputColor-wrapper">
+      <app-input-base
+      typeInput="color"
+      [nameInput]= "input"
+      [valueInput]="'input'"
+      [styleInput]="{
+        'border-radius': 'var(--radius)',
+        'width': '2.7rem',
+        'height': '1.7rem',
+        'scale': '2',
+      }">
+      </app-input-base>
+    </div>
+  </label>  
+
+  <label *ngFor="let input of inputStylerList.slice(3,7)" class="btnStyler-label" [for]="input">
+    <p class="btnStyler-name">{{input}} :</p>
+    <div class="inputText-wrapper">
+      <app-input-base
+      typeInput="number"
+      [nameInput]= "input"
+      [valueInput]="'input'"
+      >
+      </app-input-base>
+    </div>
+  </label>  
+</form>
+
+{{stylerList | json}}

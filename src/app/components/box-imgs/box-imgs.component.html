@@ -1,0 +1,9 @@
+<section class="boxImgs">
+  <h3 class="boxImgs-title">Images:</h3>
+  <figure class="boxImgs-container">
+    <img *ngFor="let img of imgList"
+    class="boxImgs-img"
+    [src]="img[1]" 
+    [alt]="img[0] + ' icon'">
+  </figure>
+</section>

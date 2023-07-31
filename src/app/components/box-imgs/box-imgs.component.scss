@@ -1,0 +1,39 @@
+.boxImgs{
+  --radius: .4rem;
+  --radius2: .3rem;
+  --backgroundClr: hsla(0, 0%, 1%, 0.4);
+
+  @media (prefers-color-scheme: dark) {
+    --backgroundClr: hsla(0, 0%, 100%, 0.4);
+  }
+
+  display: grid;
+  gap: 2rem;
+
+  &-title{
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+  }
+  
+  &-container{
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(4rem, 100%), 1fr));
+    padding: 1rem 0;
+    border-radius: var(--radius, .4rem);
+  }
+
+  &-img{
+    width: 2.5rem;
+    padding: 0.3rem;
+    border-radius: var(--radius2, .3rem);
+    cursor: pointer;
+    &:hover{
+      background: var(--backgroundClr);
+      opacity: .8;
+    }
+  }
+}
