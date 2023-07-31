@@ -17,6 +17,7 @@ import { ButtonSizerComponent } from './components/button-sizer/button-sizer.com
 import { ShadowEditorComponent } from './components/shadow-editor/shadow-editor.component';
 import { ButtonVisualStylerComponent } from './components/button-visual-styler/button-visual-styler.component';
 import { BoxImgsComponent } from './components/box-imgs/box-imgs.component';
+import { OptionSelectorComponent } from './components/option-selector/option-selector.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BoxImgsComponent } from './components/box-imgs/box-imgs.component';
     ButtonSizerComponent,
     ShadowEditorComponent,
     ButtonVisualStylerComponent,
-    BoxImgsComponent
+    BoxImgsComponent,
+    OptionSelectorComponent
   ],
   imports: [
     BrowserModule,

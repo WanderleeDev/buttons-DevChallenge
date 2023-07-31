@@ -14,7 +14,14 @@
       }">
       </app-input-base>
     </div>
-  </label>  
+  </label>
+
+  <label class="btnStyler-label" for="">
+    <p class="btnStyler-name">Border-Style</p>
+    <div class="inputText-wrapper">
+      <app-option-selector></app-option-selector>
+    </div>
+  </label>
 
   <label *ngFor="let input of inputStylerList.slice(3,7)" class="btnStyler-label" [for]="input">
     <p class="btnStyler-name">{{input}} :</p>
