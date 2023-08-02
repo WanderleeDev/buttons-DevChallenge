@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-option-selector',
@@ -7,15 +7,20 @@ import { Component } from '@angular/core';
 })
 export class OptionSelectorComponent {
 
-  borderStyles = [
-    "none",
-    "solid",
-    "dashed",
-    "dotted",
-    "double",
-    "groove",
-    "ridge",
-    "inset",
-    "outset"
+  optionList: string[][] = [
+    ["none","solid","dashed","dotted","double","groove","ridge","inset","outset"],
+    ['row', 'row-reverse']
   ];
+
+  @Input() index:number = 0;
+  @Input() selectName?: string;
+  @Input() selectId?: string;
+  @Input() valueInput?: string | number;
+
+  @Output() valueInputChange = new EventEmitter<string>();
+
+  onValueInputChange(newValue: string) {
+    this.valueInput = newValue;
+    this.valueInputChange.emit(this.valueInput);
+  }
 }

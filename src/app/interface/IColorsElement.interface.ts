@@ -1,10 +1,10 @@
 export interface IColorsBtn {
   'color': string;
   'border-Color': string;
+  'img-Direction': string;
   'background': string;
-  'font-Weight': string;
-  'border-Width': string;
-  'border-Style': string;
-  'radius': string;
-  [key: string]: string 
+  'border-Width': number;
+  'borderStyle': string;
+  'radius': number;
+  [key: string]: string| number 
 }

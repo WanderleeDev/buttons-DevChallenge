@@ -1,2 +1,17 @@
 :host{
+  display: grid;
+  gap: 2rem;
+  align-content: center;
+}
+
+.interfaceBtns{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  color: #fff;
+}
+
+.inputBox{
+  display: grid;
+  gap: 2rem;
 }

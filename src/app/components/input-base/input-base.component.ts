@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { IShadowBox } from 'src/app/interface/IshadowBox.interface';
 import { InputValueService } from 'src/app/services/inputValueService/input-value.service';
 
@@ -10,24 +10,20 @@ import { InputValueService } from 'src/app/services/inputValueService/input-valu
 })
 
 export class InputBaseComponent {
-  shadowBox! :IShadowBox;
   
   @Input() typeInput: string = 'text' ;
-  @Input() nameInput: string = 'baseInput' ;
+  @Input() nameInput: string = '' ;
   @Input() maxInput: number = 0;
   @Input() minInput: number = 0;
   @Input() idInput: string = '' ;
   @Input() styleInput = {} ;
   @Input() classInput: string = '';
-  @Input() valueInput: string = '';
+  @Input() valueInput?: string | number;
 
-  constructor(private inputValueService: InputValueService) {
-    this.inputValueService.shadowBox$.subscribe((params :IShadowBox) => {
-      this.shadowBox = params;
-    });
-  }
+  @Output() valueInputChange = new EventEmitter<string>();
 
-  updateValue(){
-    this.inputValueService.updateShadowBox(this.shadowBox);
+  onValueInputChange(newValue: string) {
+    this.valueInput = newValue;
+    this.valueInputChange.emit(this.valueInput);
   }
 }

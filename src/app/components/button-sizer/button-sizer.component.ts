@@ -30,7 +30,4 @@ export class ButtonSizerComponent implements OnInit, OnDestroy {
     this.subscriptionSizes.unsubscribe();
     console.log(`[DEBUG] Data saved:'subscriptionSizes', close`); 
   }
-  updateValue(){
-    //InputValueService.updateSizeBtn(this.sizesBtn);
-  }
 }

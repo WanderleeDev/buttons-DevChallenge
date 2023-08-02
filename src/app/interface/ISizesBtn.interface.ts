@@ -3,6 +3,8 @@ export interface ISizeBtn {
   height: number;    
   paddingX: number;   
   paddingY: number;   
-  fontSize: string;   
+  fontSize: number;   
+  'font-Weight': number;
+  letterSpacing: number;   
   [key: string]: string | number;
 }

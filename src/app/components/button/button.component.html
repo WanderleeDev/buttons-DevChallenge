@@ -4,7 +4,8 @@
   </code>
   <button 
     [disabled]="hasBtnDisabled" 
-    class="btn" 
+    class="btn"
+    [attr.id]="btnId || null" 
     [style]="btnStyle"
     [title]="hasBtnDisabled ? 'is disabled' : ''">
     <img class="btn-img" *ngIf="imgUrl" [src]="imgUrl" alt="icon">

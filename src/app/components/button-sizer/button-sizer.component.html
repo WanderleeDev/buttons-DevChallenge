@@ -5,10 +5,9 @@
       <app-input-base
       typeInput="number"
       [nameInput]= "input"
-      [valueInput]="'input'"
+      [(valueInput)]="sizesBtn[input]"
       >
       </app-input-base>
     </div>
   </label>  
 </form>
-{{sizesBtn | json}}

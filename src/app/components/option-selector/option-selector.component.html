@@ -1,5 +1,12 @@
-<select id="border-style-select" class="selectBox">
-  <option *ngFor="let style of borderStyles" 
-  value="style"
-  >{{style}}</option>
-</select>
+<select 
+  class="selectBox"
+  [attr.name]="selectName || null"
+  [attr.id]="selectId || null">
+  [(ngModel)]="valueInput"
+  <option *ngFor="let option of optionList[index]"
+    class="selectBox-option" 
+    [value]="option"
+    >
+    {{option}}
+  </option>
+  </select>

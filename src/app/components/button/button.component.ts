@@ -11,4 +11,5 @@ export class ButtonComponent {
   @Input() text: string = 'Default';
   @Input() hasBtnDisabled: boolean = false;
   @Input() dataCode: string = '';
+  @Input()  btnId: string = '';
 }

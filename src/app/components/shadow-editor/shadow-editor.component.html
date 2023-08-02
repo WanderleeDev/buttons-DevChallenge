@@ -4,7 +4,7 @@
     <p class="boxShadow-name">{{input}}</p>
       <app-input-base 
       typeInput="number"
-      [valueInput]="input"
+      [(valueInput)]="shadowBox[input]"
       [styleInput]="{
         'font-size': '.8rem',
         'width': '2.7rem',
@@ -19,10 +19,10 @@
     <div class="boxShadow-wrapperRange">
       <app-input-base
       typeInput="range"
-      [valueInput]="input"
       [maxInput]="100"
       [minInput]="-100"
       nameInput="'x-axis range'"
+      [(valueInput)]="shadowBox[input]"
       [styleInput]="{
         'position': 'relative',
         'color': 'transparent',
@@ -37,8 +37,8 @@
     <div class="inputColor-wrapper">
       <app-input-base
       typeInput="color"
-      [valueInput]="'color'"
       nameInput="colorChange"
+      [(valueInput)]="shadowBox.color"
       [styleInput]="{
         'border-radius': 'var(--radius)',
         'width': '2.7rem',
@@ -49,4 +49,3 @@
     </div>
   </label>
 </form>
-{{shadowBox |json}}

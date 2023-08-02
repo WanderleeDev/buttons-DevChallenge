@@ -1,0 +1,14 @@
+:host{
+  display: grid;
+  gap: 2rem;
+}
+
+.newBtn{
+  display: grid;
+  place-content: center;
+  min-height: 15rem;
+  border-radius: .375rem;
+  background-color: #00000066;
+  overflow: hidden;
+  backdrop-filter: blur(3rem);
+}

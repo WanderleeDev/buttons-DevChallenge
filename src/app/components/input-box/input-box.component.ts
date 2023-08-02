@@ -6,5 +6,9 @@ import { Component} from '@angular/core';
   styleUrls: ['./input-box.component.scss']
 })
 export class InputBoxComponent {
-
+  listBtn = [
+    'Visual',
+    'Size',
+    'Shadow'
+  ]
 }

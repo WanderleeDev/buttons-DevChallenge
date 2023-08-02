@@ -23,7 +23,7 @@ export class ButtonVisualStylerComponent implements OnInit, OnDestroy {
   
   ngOnInit(): void {
     this.inputStylerList = Object.keys(this.stylerList);
-    console.log('[DEBUG] Data saved: inputShadowList initialized:', this.inputStylerList);   
+    console.log('[DEBUG] Data saved: inputShadowList initialized:', this.inputStylerList);  
   }
 
   ngOnDestroy(): void {

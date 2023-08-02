@@ -18,6 +18,7 @@ import { ShadowEditorComponent } from './components/shadow-editor/shadow-editor.
 import { ButtonVisualStylerComponent } from './components/button-visual-styler/button-visual-styler.component';
 import { BoxImgsComponent } from './components/box-imgs/box-imgs.component';
 import { OptionSelectorComponent } from './components/option-selector/option-selector.component';
+import { CssStyleViewerComponent } from './components/css-style-viewer/css-style-viewer.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { OptionSelectorComponent } from './components/option-selector/option-sel
     ShadowEditorComponent,
     ButtonVisualStylerComponent,
     BoxImgsComponent,
-    OptionSelectorComponent
+    OptionSelectorComponent,
+    CssStyleViewerComponent
   ],
   imports: [
     BrowserModule,

@@ -23,17 +23,19 @@ export class InputValueService {
     height:  0,
     paddingX:  0,
     paddingY:  0,
-    fontSize: '1rem'
+    fontSize: 0,
+    'font-Weight': 0,
+    letterSpacing: 0
   });
 
   private colorBtnSubject = new BehaviorSubject<IColorsBtn>({
     'color':  'black',
     'border-Color': 'black',
     'background':  'transparent',
-    'font-Weight':  'normal',
-    'border-Width': '1px',
-    'border-Style': 'solid',
-    'radius': '1px',
+    'borderStyle': 'none',
+    'img-Direction':  'row',
+    'border-Width': 0,
+    'radius': 0,
   });
 
 
@@ -49,5 +51,9 @@ export class InputValueService {
 
   updateSizesBtn(newSizeBtn: ISizeBtn) {
     this.sizeBtnSubject.next(newSizeBtn);
+  }
+  
+  updateColorBtn(newColorBtn: IColorsBtn) {
+    this.colorBtnSubject.next(newColorBtn);
   }
 }
