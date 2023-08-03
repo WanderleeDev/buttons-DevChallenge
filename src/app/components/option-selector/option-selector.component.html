@@ -1,11 +1,14 @@
 <select 
   class="selectBox"
   [attr.name]="selectName || null"
-  [attr.id]="selectId || null">
+  [attr.id]="selectId || null"
   [(ngModel)]="valueInput"
+  >
+  
   <option *ngFor="let option of optionList[index]"
     class="selectBox-option" 
     [value]="option"
+    (change)="onValueInputChange(option)"
     >
     {{option}}
   </option>

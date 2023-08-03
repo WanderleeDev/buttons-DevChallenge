@@ -16,4 +16,7 @@
   }">
 </app-button>
 </div>
+<button
+[ngStyle]="transform()">test</button>
 <app-css-style-viewer></app-css-style-viewer>
+{{transform() | json}}

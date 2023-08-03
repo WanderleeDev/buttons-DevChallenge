@@ -22,5 +22,6 @@ export class OptionSelectorComponent {
   onValueInputChange(newValue: string) {
     this.valueInput = newValue;
     this.valueInputChange.emit(this.valueInput);
+    console.log(newValue);
   }
 }

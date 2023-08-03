@@ -19,19 +19,19 @@ export class InputValueService {
   });
 
   private sizeBtnSubject = new BehaviorSubject<ISizeBtn>({
-    width:  0,
-    height:  0,
+    width:  124,
+    height:  44,
     paddingX:  0,
     paddingY:  0,
-    fontSize: 0,
-    'font-Weight': 0,
+    fontSize: 14,
+    'font-Weight': 500,
     letterSpacing: 0
   });
 
   private colorBtnSubject = new BehaviorSubject<IColorsBtn>({
     'color':  'black',
     'border-Color': 'black',
-    'background':  'transparent',
+    'background':  'white',
     'borderStyle': 'none',
     'img-Direction':  'row',
     'border-Width': 0,
