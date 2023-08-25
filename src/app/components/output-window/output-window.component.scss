@@ -1,6 +1,7 @@
 :host{
   display: grid;
   gap: 2rem;
+  position: relative;
 }
 
 .newBtn{
@@ -11,4 +12,14 @@
   background-color: #00000066;
   overflow: hidden;
   backdrop-filter: blur(3rem);
+}
+
+.btn-bgChange{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: .5rem;
+  right: .5rem;
+  border-radius: .2rem;
+  cursor: pointer;
 }

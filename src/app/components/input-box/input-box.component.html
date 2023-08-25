@@ -1,6 +1,7 @@
 <div class="inputBox">
   <div class="interfaceBtns">
-    <app-button *ngFor="let btn of listBtn"
+    <app-button *ngFor="let btn of listBtn, index as i"
+    [pathLink]="routes[i]"
     [text]="btn"
     [btnStyle]="{
       background: 'red',
@@ -10,9 +11,9 @@
       fontWeight: '600'
     }"></app-button>
   </div>
-  <app-button-visual-styler></app-button-visual-styler>
-  <app-button-sizer></app-button-sizer>
-  <app-shadow-editor></app-shadow-editor>
+  <router-outlet>
+    <app-button-visual-styler></app-button-visual-styler>
+  </router-outlet>
 </div>
 
 <app-box-imgs></app-box-imgs>

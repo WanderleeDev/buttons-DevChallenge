@@ -1,8 +1,8 @@
 export interface ISizeBtn {
   width: number;   
   height: number;    
-  paddingX: number;   
-  paddingY: number;   
+  'padding-inline': number;   
+  'padding-block': number;   
   fontSize: number;   
   'font-Weight': number;
   letterSpacing: number;   

@@ -12,4 +12,5 @@ export class ButtonComponent {
   @Input() hasBtnDisabled: boolean = false;
   @Input() dataCode: string = '';
   @Input()  btnId: string = '';
+  @Input() pathLink?: string ;
 }

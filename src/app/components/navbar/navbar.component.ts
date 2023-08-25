@@ -7,7 +7,7 @@ import { ImgServiceService } from 'src/app/services/ImgService/img-service.servi
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit{
-  
+
 navItems:string[] = [
   'colors',
   'typography',
@@ -16,7 +16,7 @@ navItems:string[] = [
   'inputs',
   'grid'
   ];
-  
+
   logoBtn: string = '';
 
   constructor(private imgService: ImgServiceService) {
@@ -25,6 +25,5 @@ navItems:string[] = [
 
   ngOnInit(): void {
     console.log(this.logoBtn);
-    
   }
 }

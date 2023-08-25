@@ -5,6 +5,6 @@ export interface IColorsBtn {
   'background': string;
   'border-Width': number;
   'borderStyle': string;
-  'radius': number;
+  'border-radius': number;
   [key: string]: string| number 
 }

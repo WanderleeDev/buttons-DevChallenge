@@ -19,10 +19,10 @@ export class InputValueService {
   });
 
   private sizeBtnSubject = new BehaviorSubject<ISizeBtn>({
-    width:  124,
-    height:  44,
-    paddingX:  0,
-    paddingY:  0,
+    width:  100,
+    'height':  44,
+    'padding-inline':  0,
+    'padding-block':  0,
     fontSize: 14,
     'font-Weight': 500,
     letterSpacing: 0
@@ -35,7 +35,7 @@ export class InputValueService {
     'borderStyle': 'none',
     'img-Direction':  'row',
     'border-Width': 0,
-    'radius': 0,
+    'border-radius': 0,
   });
 
 

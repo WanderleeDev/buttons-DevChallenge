@@ -1,22 +1,9 @@
 <div class="newBtn">
-<app-button
-  text="MyButton"
-  [imgUrl]="'../../../assets/svg/trending.svg'"
-  [btnId]="'newBtn'"
-  [btnStyle]="{
-    border: 'solid 2px #9041ff',
-    height: '3rem',
-    width: '8rem',
-    borderRadius: '0.375rem',
-    background: '#e6d4ff',
-    color: '#9041ff',
-    letterSpacing: '.1rem',
-    fontWeight: '600',
-    flexDirection: 'row-reverse',
-  }">
-</app-button>
+  <button [ngStyle]="{background: bgColor}" (click)="bgChange()" class="btn-bgChange" type="button"></button>
+  <app-button
+    text="MyButton"
+    [btnId]="'newBtn'"
+    [btnStyle]="transform()">
+  </app-button>
 </div>
-<button
-[ngStyle]="transform()">test</button>
 <app-css-style-viewer></app-css-style-viewer>
-{{transform() | json}}
