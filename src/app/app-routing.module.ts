@@ -15,6 +15,7 @@ import { ShadowEditorComponent } from './components/shadow-editor/shadow-editor.
     RouterModule.forRoot([
       {path: '', component: ButtonGalleryComponent},
       {path:'generator', component: GeneratorBtnComponent, children:[
+        {path: '', redirectTo: 'visual', pathMatch: 'full'},
         {path: 'visual', component: ButtonVisualStylerComponent},
         {path: 'size', component: ButtonSizerComponent},
         {path: 'shadow', component: ShadowEditorComponent}
